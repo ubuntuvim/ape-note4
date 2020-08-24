@@ -9,6 +9,11 @@
 
     {{content-for "head"}}
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/ape-note4.css">
 
@@ -19,6 +24,70 @@
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/ape-note4.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- ⚠️生产环境请指定版本号，如 https://cdn.jsdelivr.net/npm/vditor@x.x.x/dist... -->
+    <script src="https://cdn.jsdelivr.net/npm/vditor@3.4.7" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    let toolbar = [
+        'emoji',
+        'headings',
+        'bold',
+        'italic',
+        'link',
+        '|',
+        'list',
+        'ordered-list',
+        'check',
+        '|',
+        'quote',
+        'line',
+        'code',
+        '|',
+        'upload',
+        'table',
+        '|',
+        'edit-mode',
+        'content-theme',
+        'code-theme',
+    ];
+    new Vditor('vditor', {
+        "toolbar": toolbar,
+        "cache": {
+            "enable": true
+        },
+        "placeholder": "愉快的开始你的Markdown之旅吧……",
+        "mode": "ir",  //wysiwyg
+        "height": window.innerHeight - 90,
+        // "outline": true,  //是否展现大纲
+        "debugger": true,
+        "typewriterMode": false,  //是否启用打字机模式
+        "preview": {
+            "markdown": {
+              "toc": true,
+              "paragraphBeginningSpace": true
+            },
+            "hljs": {
+                "enable": true,
+                "lineNumber": true
+            }
+        },
+        "toolbarConfig": {
+            "pin": true,
+            "hide": false  //隐藏工具栏
+        },
+        "counter": {
+            "enable": true,
+            "type": 'md',
+        }
+    });
+    </script>
 
     {{content-for "body-footer"}}
   </body>
