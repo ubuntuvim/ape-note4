@@ -2,7 +2,7 @@
 
 ## 首页预览
 
-![首页预览](/assets/images/review/index.png)
+![首页预览](https://oscimg.oschina.net/oscnet/up-f6dbe5dcf5b049cbcb9953b2d2f7724033d.png)
 
 ## Prerequisites
 
