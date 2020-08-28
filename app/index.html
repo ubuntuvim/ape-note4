@@ -50,7 +50,7 @@
         'line',
         'code',
         '|',
-        'upload',
+        // 'upload',
         'table',
         '|',
         'edit-mode',
@@ -58,16 +58,18 @@
         'code-theme',
     ];
     new Vditor('vditor', {
+        "icon": "ant",
         "toolbar": toolbar,
         "cache": {
             "enable": true
         },
         "placeholder": "愉快的开始你的Markdown之旅吧……",
-        "mode": "ir",  //wysiwyg
+        "mode": "ir",  //wysiwyg   ir
         "height": window.innerHeight - 90,
         // "outline": true,  //是否展现大纲
         "debugger": true,
         "typewriterMode": false,  //是否启用打字机模式
+        // options.preview.theme
         "preview": {
             "markdown": {
               "toc": true,
@@ -75,7 +77,8 @@
             },
             "hljs": {
                 "enable": true,
-                "lineNumber": true
+                "lineNumber": true,
+                "style": "native"
             }
         },
         "toolbarConfig": {
