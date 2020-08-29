@@ -92,12 +92,16 @@ html,body {
 .right-container .tools {
     /* width: 100%; */
     background-color: #FBFBFB;
-    padding-right: 2.5rem !important;
+    /* padding-right: 2.5rem !important; */
     /* height: 90px; */
     /* box-shadow: inset 1rem -1px 1rem #F7F7F7; */
     border-bottom-color: rgba(0, 0, 0, 0.125);
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    width: 385px;
+    border-right-color: rgba(0, 0, 0, 0.125);
+    border-right-style: solid;
+    border-right-width: 1px;
 }
 .right-container .tools .input-group {
     border-radius: 1rem;
@@ -207,6 +211,7 @@ html,body {
     /* overflow-x: scroll; */
     background-color: inherit;
     display: grid;
+    margin-top: -56px;
 }
  /* wysiwyg */
 #vditor .vditor-ir {
@@ -214,7 +219,7 @@ html,body {
     display: flex !important; */
     height: 100vh;
     /* 顶部工具栏和编辑器工具栏的高度之和 */
-    padding-bottom: 123px;
+    padding-bottom: 60px;
 }
 #vditor:hover {
     background-color: #FFFFFF;

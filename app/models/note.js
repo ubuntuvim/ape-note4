@@ -27,6 +27,7 @@ export default class NoteModel extends Model {
     // 展示的时间格式转为：xxx之前
     get noteCreatedTime() {
         let timestamp = `${this.createdDate}`;
+
         function zeroize( num ) {
             return (String(num).length == 1 ? '0' : '') + num;
         }
