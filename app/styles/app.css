@@ -104,17 +104,17 @@ html,body {
     border-right-width: 1px;
 }
 .right-container .tools .input-group {
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
 }
 .right-container .tools .input-group>.input-group-prepend>.input-group-text {
     background-color: #FFFFFF;
     border-right: 0;
-    border-radius: 2rem 0 0 2rem;
+    /* border-radius: 2rem 0 0 2rem; */
 }
 
 .right-container .tools .input-group .form-control {
     border-left: 0;
-    border-radius: 0 2rem 2rem 0;
+    /* border-radius: 0 2rem 2rem 0; */
 }
 .right-container .tools .input-group .form-control:focus {
     box-shadow: 0 0 0 0;
@@ -211,7 +211,7 @@ html,body {
     /* overflow-x: scroll; */
     background-color: inherit;
     display: grid;
-    margin-top: -56px;
+    margin-top: -48px;
 }
  /* wysiwyg */
 #vditor .vditor-ir {
